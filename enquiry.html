@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nthati's crust bakery - Enquiry Form</title>
+</head>
+<body>
+<!-- Main Header & Navigation -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo-link">
+                <!-- Use your existing logo filename here -->
+                <img src="images/NTHATIS CRRUST LOGO.png" alt="Nthati's Crust Bakery Logo" class="header-logo">
+            </a>
+            <h1>Nthati's Crust Bakery</h1>
+        </div>
+        <nav>
+            <ul>
+                <!-- Ensure these 5 links match your 5 filenames exactly -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                
+                <!-- CHANGE this link to products.html -->
+                <li><a href="services.html">Services & Menu</a></li>
+                
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <link rel="stylesheet" href="css/styles.css">
+    </header>
+    <hr>
+
+    <main>
+        <section>
+            <h2>Custom Order & General Enquiry</h2>
+            <p>Use this form to request custom cakes, event catering quotes, or general questions.</p>
+
+            <form action="#" method="post">
+                <p>
+                    <label for="fullname">Full Name:</label><br>
+                    <input type="text" id="fullname" name="fullname" required>
+                </p>
+
+                <p>
+                    <label for="email">Email Address:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </p>
+
+                <p>
+                    <label for="phone">Phone Number:</label><br>
+                    <input type="tel" id="phone" name="phone" required>
+                </p>
+
+                <p>
+                    <label for="enquiry-type">Enquiry Type:</label><br>
+                    <select id="enquiry-type" name="enquiry-type">
+                        <option value="custom-cake">Custom Cake Request</option>
+                        <option value="catering">Event Catering Quote</option>
+                        <option value="wholesale">Wholesale Inquiry</option>
+                        <option value="general">General Question</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="pickupdate">Preferred Pickup/Event Date:</label><br>
+                    <input type="date" id="pickupdate" name="pickupdate">
+                </p>
+
+                <p>
+                    <label for="details">Enquiry Details / Special Requests:</label><br>
+                    <textarea id="details" name="details" rows="5" cols="40"></textarea>
+                </p>
+
+                <p>
+                    <button type="submit">Submit Enquiry</button>
+                    <button type="reset">Clear Form</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; Nthatis Crust Bakery (Pty) Ltd. All rights reserved.</p>
+    </footer>
+<script src="js/script.js"></script>
+</body>
+</html>
